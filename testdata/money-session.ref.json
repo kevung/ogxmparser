@@ -1,0 +1,94 @@
+{
+ "black_score": null,
+ "games": [
+  {
+   "is_crawford": false,
+   "plies": [
+    {
+     "action_id": 2,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "11ccccchhjjjjkk:66666888dddddoo:N0N::W:C:0:0:0:1",
+     "ogid_before": "11ccccchhhjjjjj:66666888dddddoo:N0N:13:B:IB:0:0:0:0"
+    },
+    {
+     "action_id": 20,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "11ccccchhjjjjkk:6666677888dddii:N0N::B:C:0:0:0:2",
+     "ogid_before": "11ccccchhjjjjkk:66666888dddddoo:N0N:66:W:R:0:0:0:1"
+    },
+    {
+     "action_id": 21,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "11ccccchhjjjjkk:6666677888dddii:N0O::W:D:0:0:0:2",
+     "ogid_before": "11ccccchhjjjjkk:6666677888dddii:N0N::B:C:0:0:0:2"
+    },
+    {
+     "action_id": 32,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "11ccccchhjjjjkk:6666677888dddii:B2T::B:A:0:0:0:2",
+     "ogid_before": "11ccccchhjjjjkk:6666677888dddii:N0O::W:D:0:0:0:2"
+    },
+    {
+     "action_id": 33,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "11ccccchhjjjjkk:6666677888dddii:W3T::W:A:0:0:0:2",
+     "ogid_before": "11ccccchhjjjjkk:6666677888dddii:B2T::B:A:0:0:0:2"
+    },
+    {
+     "action_id": 1,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "23ccccchhjjjjkk:6666677888dddii:W3N::W:C:0:0:0:3",
+     "ogid_before": "11ccccchhjjjjkk:6666677888dddii:W3T:12:B:R:0:0:0:2"
+    },
+    {
+     "action_id": 27,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "23ccccchhjjjjkk:6666677888dddii:W3N::B:C:0:0:0:3",
+     "ogid_before": "23ccccchhjjjjkk:6666677888dddii:W3N::W:C:0:0:0:3"
+    }
+   ],
+   "points_won": 16,
+   "winner": 0
+  },
+  {
+   "is_crawford": false,
+   "plies": [
+    {
+     "action_id": 8,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "11ccccchhhjjjjj:44666688dddddoo:N0N::B:C:16:0:0L:1",
+     "ogid_before": "11ccccchhhjjjjj:66666888dddddoo:N0N:24:W:IB:16:0:0L:0"
+    },
+    {
+     "action_id": 19,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "1cccccchhhjjjjj:44666688dddddoo:N0N::W:C:16:0:0L:2",
+     "ogid_before": "11ccccchhhjjjjj:44666688dddddoo:N0N:56:B:R:16:0:0L:1"
+    },
+    {
+     "action_id": 34,
+     "alternatives": 0,
+     "luck": null,
+     "ogid_after": "1cccccchhhjjjjj:44666688dddddoo:N0N::B:C:16:0:0L:2",
+     "ogid_before": "1cccccchhhjjjjj:44666688dddddoo:N0N::W:C:16:0:0L:2"
+    }
+   ],
+   "points_won": null,
+   "winner": 0
+  }
+ ],
+ "match_length": 0,
+ "player_black": "Bob",
+ "player_white": "Alice",
+ "signatures": [],
+ "white_score": null
+}
