@@ -274,6 +274,10 @@ func (p *parser) decodeGame(c *cursor) (*Game, error) {
 		if g.InitialBoard, err = board(rc); err != nil {
 			return nil, err
 		}
+		// A default is never written (3.2): the opening board is the absent field.
+		if open, ok := openings[p.f.Match.Variant]; ok && *g.InitialBoard == open {
+			return nil, rc.errorf("initial_board written at the opening position")
+		}
 	}
 	if r.has(4) {
 		v, err := rc.v32()

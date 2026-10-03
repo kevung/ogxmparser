@@ -26,11 +26,15 @@ var ErrVersion = errors.New("ogxm: unsupported version")
 
 // ParseFile reads and parses one OGXM file from disk.
 func ParseFile(path string) (*File, error) {
-	data, err := os.ReadFile(path)
+	fh, err := os.Open(path)
 	if err != nil {
 		return nil, err
 	}
-	return Parse(data)
+	defer fh.Close()
+	if st, err := fh.Stat(); err == nil && st.Size() > MaxFileSize {
+		return nil, &FormatError{Msg: "file larger than MAX_FILE_SIZE"}
+	}
+	return ParseReader(fh)
 }
 
 // ParseReader reads r to the end and parses it as one OGXM file.
@@ -38,6 +42,9 @@ func ParseReader(r io.Reader) (*File, error) {
 	data, err := io.ReadAll(io.LimitReader(r, MaxFileSize+1))
 	if err != nil {
 		return nil, err
+	}
+	if len(data) > MaxFileSize {
+		return nil, &FormatError{Msg: "file larger than MAX_FILE_SIZE"}
 	}
 	return Parse(data)
 }

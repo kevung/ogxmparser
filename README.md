@@ -73,4 +73,5 @@ go test -fuzz FuzzParse .
 ## License
 
 MIT, see [LICENSE](LICENSE). The specifications this package implements are
-© Eran Lambooij, CC BY 4.0; the corpus file taken from AnkiGammon is MIT.
+© Eran Lambooij, CC BY 4.0; the corpus file taken from AnkiGammon is MIT, © 2025 AnkiGammon: its licence
+is [testdata/LICENSE-AnkiGammon](testdata/LICENSE-AnkiGammon).

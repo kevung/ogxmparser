@@ -88,6 +88,8 @@ func TestRefusals(t *testing.T) {
 		"11z:66:N0N::W",              // character outside 0-p
 		"1111111111111111:66:N0N::W", // sixteen checkers
 		"1:1:N0N::W",                 // both colours on one point
+		"p:6:N0N::W",                 // White on Black's bar
+		"1:0:N0N::W",                 // Black on White's bar
 		"1:6:X0N::W",                 // cube owner
 		"1:6:N0Q::W",                 // cube action
 		"1:6:N0N:71:W",               // die 7

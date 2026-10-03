@@ -178,6 +178,9 @@ func Parse(s string) (OGID, error) {
 			if p < 0 {
 				return o, fmt.Errorf("%w: character %q", ErrInvalid, run[i])
 			}
+			if (side == White && p == 25) || (side == Black && p == 0) {
+				return o, fmt.Errorf("%w: a checker on the opponent's bar", ErrInvalid)
+			}
 			if side == White {
 				if o.Board[p] < 0 {
 					return o, fmt.Errorf("%w: point %d holds both colours", ErrInvalid, p)
